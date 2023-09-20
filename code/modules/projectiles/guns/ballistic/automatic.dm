@@ -3112,3 +3112,29 @@
 	gun_accuracy_zone_type = ZONE_WEIGHT_PRECISION
 	zoom_factor = 1.2
 	can_scope = FALSE
+
+
+
+/* * * * * * * * * * *
+ * Type 93 assault rifle
+ * Chinese 5.56mm AN-94-like rifle
+ * .223 / 5.56mm
+ * Uncommon
+ * * * * * * * * * * */
+
+/obj/item/gun/ballistic/automatic/blitzneedle
+	name = "Blitz Needle"
+	desc = "HEAVY WIP, currently only the internals work like it."
+	icon_state = "type93"
+	item_state = "handmade_rifle"
+	mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
+	weapon_class = WEAPON_CLASS_RIFLE
+	weapon_weight = GUN_ONE_HAND_ONLY
+	damage_multiplier = GUN_EXTRA_DAMAGE_0
+	cock_delay = GUN_COCK_RIFLE_BASE
+	init_recoil = AUTORIFLE_RECOIL(1.5, 2)
+	init_firemodes = list(
+		/datum/firemode/burst/eight/faster
+	)
+	fire_sound = 'sound/f13weapons/assaultrifle_fire.ogg'

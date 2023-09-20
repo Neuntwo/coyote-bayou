@@ -349,6 +349,18 @@
 	name = "5-Round Burst"
 	desc = "Quick, controlled bursts."
 	burst_delay_default = GUN_BURSTFIRE_DELAY_FASTEST
+	
+/datum/firemode/burst/eight
+	name = "8-Round Burst"
+	desc = "For when you need to specialize in opressive fire."
+	burst_delay_default = GUN_BURSTFIRE_DELAY_NORMAL
+	burst_count_default = 8
+	
+/datum/firemode/burst/eight/faster
+	name = "8-Round Burst"
+	desc = "For when you REALLY need to specialize in opressive fire."
+	burst_delay_default = GUN_BURSTFIRE_DELAY_FASTER
+	burst_count_default = 8
 
 
 
